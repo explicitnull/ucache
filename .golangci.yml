@@ -1,0 +1,14 @@
+run:
+  go: '1.19'
+  tests: false
+  issues-exit-code: 2
+
+linters:
+  enable-all: true
+  disable:
+    - exhaustivestruct #deprecated
+    - scopelint #deprecated
+    - maligned #deprecated
+    - golint #deprecated
+    - interfacer #deprecated
+    - structcheck #deprecated
