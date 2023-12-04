@@ -40,8 +40,8 @@ func NewRistretto(cacheMetrics promcommon.CacheIncrementer, config Config) (*Ris
 		cache:                cache,
 		cacheMetrics:         cacheMetrics,
 		averageItemCost:      config.AverageItemCost,
-		minCacheableItemCost: config.MinItemCost,
-		maxCacheableItemCost: config.MaxItemCost,
+		minCacheableItemCost: config.MinCacheableItemCost,
+		maxCacheableItemCost: config.MaxCacheableItemCost,
 		ttl:                  config.TTL,
 	}, nil
 }
